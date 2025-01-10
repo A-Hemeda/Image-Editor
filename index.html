@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? ========== > Template CSS File Bootstrap <========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!--? ========== > Main Template CSS File <========== -->
+    <link rel="stylesheet" href="main.css" />
+    <title>Image Editor</title>
+  </head>
+  <body>
+    <main class="container m-auto p-3 rounded-2 bg-dark mt-5">
+      <div
+        class="row justify-content-around align-items-center gy-3 mt-2 text-center"
+      >
+        <div class="col-md-6">
+          <figure class="text-center">
+            <div id="imgBox">
+              <img
+                alt="upload img"
+                id="uploadImg"
+                class="img-fluid img-thumbnail w-75"
+              />
+              <canvas id="canvas" class="img-fluid w-75"></canvas>
+            </div>
+            <figcaption class="my-3">
+              <label for="upload" class="btn btn-light text-center"
+                >Upload</label
+              >
+              <input type="file" name="upload" id="upload" class="d-none" />
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <div class="filters">
+            <ul class="text-capitalize list-unstyled text-white">
+              <li>
+                <label for="saturate">saturate</label>
+                <input
+                  type="range"
+                  name="saturate"
+                  id="saturate"
+                  min="0"
+                  max="200"
+                  value="100"
+                />
+              </li>
+              <li>
+                <label for="contrast">contrast</label>
+                <input
+                  type="range"
+                  name="contrast"
+                  id="contrast"
+                  min="0"
+                  max="200"
+                  value="100"
+                />
+              </li>
+              <li>
+                <label for="brightness">brightness</label>
+                <input
+                  type="range"
+                  name="brightness"
+                  id="brightness"
+                  min="0"
+                  max="200"
+                  value="100"
+                />
+              </li>
+              <li>
+                <label for="sepia">sepia</label>
+                <input
+                  type="range"
+                  name="sepia"
+                  id="sepia"
+                  min="0"
+                  max="200"
+                  value="0"
+                />
+              </li>
+              <li>
+                <label for="grayScale">grayScale</label>
+                <input
+                  type="range"
+                  name="grayScale"
+                  id="grayScale"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0"
+                />
+              </li>
+              <li>
+                <label for="blur">blur</label>
+                <input
+                  type="range"
+                  name="blur"
+                  id="blur"
+                  min="0"
+                  max="10"
+                  step="0.1"
+                  value="0"
+                />
+              </li>
+              <li>
+                <label for="hue-rotate">hue-rotate</label>
+                <input
+                  type="range"
+                  name="hue-rotate"
+                  id="hue-rotate"
+                  min="0"
+                  max="10"
+                  step="0.1"
+                  value="0"
+                />
+              </li>
+              <li
+                class="d-flex flex-row justify-content-around align-items-center"
+              >
+                <span class="btn btn-primary" id="reset">reset</span>
+
+                <a download="image" id="download"
+                  ><svg
+                    viewBox="0 0 256 256"
+                    height="32"
+                    width="38"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--? ========== > Template JS File Bootstrap <========== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--? ========== > Main JS File <========== -->
+    <script src="main.js"></script>
+  </body>
+</html>

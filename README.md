@@ -73,12 +73,9 @@ You will need a modern web browser to run this application.
 
 Experience the Tabs Project in action! Click the link below to access the live demo:
 
-### [Live Demo](https://basmasalim.github.io/ImageEditor/)
+### [Live Demo](https://a-hemeda.github.io/Image-Editor/)
 
 Feel free to interact with the project, browse through different jobs, and explore the user-friendly interface. The live demo provides a hands-on experience to see the Tabs Project in action.
 
 ## Contributing
 If you have suggestions or find issues with the template, feel free to open an issue or create a pull request. Contributions are welcome!
-
-## Contact
-If you have any questions, feedback, or suggestions, please feel free to reach out to us at [basmasalim030@gmail.com](mailto:basmasalim030@gmail.com). We value your input and would love to hear from you!

@@ -1,4 +1,4 @@
-# Image Filter Application
+# Image Editor
 
 This application allows users to upload an image, apply various filters to it, and download the modified image. The filters include saturation, contrast, brightness, sepia, grayscale, blur, and hue rotation.
 
